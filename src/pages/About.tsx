@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowRight, Heart, Lightbulb, Target, Users } from "lucide-react";
-import farmerImage from "@/assets/farmer-portrait.jpg";
+import founderImage from "@/assets/founder-ali-matovu.png";
 
 const About = () => {
   return (
@@ -67,9 +67,9 @@ const About = () => {
               <div className="relative">
                 <div className="rounded-3xl overflow-hidden shadow-elevated">
                   <img
-                    src={farmerImage}
-                    alt="Yofarm Hub Founder"
-                    className="w-full h-[500px] object-cover"
+                    src={founderImage}
+                    alt="Ali Matovu - Founder & CEO of Yofarm Hub"
+                    className="w-full h-[500px] object-cover object-top"
                   />
                 </div>
                 <div className="absolute -bottom-6 left-6 bg-primary rounded-2xl px-6 py-4 shadow-elevated">

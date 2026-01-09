@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import logo from "@/assets/logo.png";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,14 +20,8 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 hero-gradient rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-serif font-bold text-xl">Y</span>
-            </div>
-            <div className="flex flex-col">
-              <span className="font-serif font-bold text-xl text-foreground">Yofarm Hub</span>
-              <span className="text-xs text-muted-foreground -mt-1">B2B Marketplace</span>
-            </div>
+          <Link to="/" className="flex items-center">
+            <img src={logo} alt="Yofarm Hub" className="h-14 w-auto" />
           </Link>
 
           {/* Desktop Navigation */}

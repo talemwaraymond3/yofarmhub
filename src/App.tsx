@@ -8,6 +8,7 @@ import About from "./pages/About";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import HowItWorks from "./pages/HowItWorks";
+import Auth from "./pages/Auth";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -24,6 +25,8 @@ const App = () => (
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/how-it-works" element={<HowItWorks />} />
+          <Route path="/login" element={<Auth />} />
+          <Route path="/register" element={<Auth />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
