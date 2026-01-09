@@ -1,5 +1,5 @@
 import { Shield, Users, Globe } from "lucide-react";
-import farmerImage from "@/assets/farmer-portrait.jpg";
+import whyYofarmImage from "@/assets/why-yofarm.png";
 
 const features = [
   {
@@ -28,8 +28,8 @@ const WhyChooseSection = () => {
           <div className="relative">
             <div className="relative rounded-3xl overflow-hidden shadow-elevated">
               <img
-                src={farmerImage}
-                alt="African farmer with produce"
+                src={whyYofarmImage}
+                alt="Farmers in a greenhouse"
                 className="w-full h-[500px] object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-foreground/40 to-transparent" />

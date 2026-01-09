@@ -3,7 +3,12 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowRight, ShoppingBasket, Truck, Landmark, MessageCircle, CheckCircle } from "lucide-react";
-import produceImage from "@/assets/produce-display.jpg";
+import marketplaceImage from "@/assets/service-marketplace.png";
+import logisticsImage from "@/assets/service-logistics.png";
+import financeImage from "@/assets/service-finance.png";
+import consultancyImage from "@/assets/service-consultancy.png";
+
+const serviceImages = [marketplaceImage, logisticsImage, financeImage, consultancyImage];
 
 const services = [
   {
@@ -116,7 +121,7 @@ const Services = () => {
                   <div className={`relative ${index % 2 === 1 ? 'lg:order-1' : ''}`}>
                     <div className="bg-muted rounded-3xl p-8 h-[400px] flex items-center justify-center">
                       <img
-                        src={produceImage}
+                        src={serviceImages[index]}
                         alt={service.title}
                         className="w-full h-full object-cover rounded-2xl"
                       />
