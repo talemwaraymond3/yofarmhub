@@ -12,7 +12,8 @@ const Navbar = () => {
     { name: "Marketplace", href: "/marketplace" },
     { name: "About", href: "/about" },
     { name: "Services", href: "/services" },
-    { name: "How It Works", href: "/how-it-works" },
+    { name: "Agents", href: "/agents" },
+    { name: "FAQs", href: "/faq" },
     { name: "Contact", href: "/contact" },
   ];
 
